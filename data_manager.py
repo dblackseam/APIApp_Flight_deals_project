@@ -35,7 +35,7 @@ class DataManager:
                 "term": row["City"]
             }
             tequila_header = {
-                "apikey": "YOUR_API_KEY"
+                "apikey": os.environ["TEQUILA_API_KEY"]
             }
 
             iata_code = requests.get(TEQUILA_IATA_ENDPOINT, params=tequila_body, headers=tequila_header)

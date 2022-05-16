@@ -12,7 +12,7 @@ class FlightSearch:
         self.sheet_data = all_the_sheet_data
         self.flights = []
 
-    def search_for_flights(self):
+    def search_for_flights(self) -> list:
         current_date = datetime.now().date()
         tomorrow_date = current_date + timedelta(days=1)
         date_in_six_months = current_date + timedelta(weeks=24)
